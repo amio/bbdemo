@@ -20,6 +20,7 @@ module.exports = function (grunt) {
         dist: 'dist'
     };
 
+    //noinspection JSUnresolvedFunction
     grunt.initConfig({
         yeoman: yeomanConfig,
         watch: {
@@ -168,7 +169,7 @@ module.exports = function (grunt) {
                     // http://requirejs.org/docs/errors.html#sourcemapcomments
                     preserveLicenseComments: false,
                     useStrict: true,
-                    wrap: true,
+                    wrap: true
                     //uglify2: {} // https://github.com/mishoo/UglifyJS2
                 }
             }
