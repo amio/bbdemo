@@ -1,28 +1,30 @@
-/*global require*/
-'use strict';
+/* Global Require */
 
 require.config({
     shim: {
-        underscore: {
+        _: {
             exports: '_'
         },
-        backbone: {
+        B: {
             deps: [
-                'underscore',
-                'jquery'
+                '_',
+                '$'
             ],
             exports: 'Backbone'
-        },
+        }
     },
     paths: {
-        jquery: '../components/jquery/jquery',
-        backbone: '../components/backbone-amd/backbone',
-        underscore: '../components/underscore-amd/underscore',
+        $: '../components/jquery/jquery',
+        B: '../components/backbone-amd/backbone',
+        _: '../components/underscore-amd/underscore',
+        'text': '../components/requirejs-text/text',
+        // base components
+        'BC': 'controllers/base-controller',
+        'BPV': 'views/base-page-view'
     }
 });
 
-require([
-    'backbone'
-], function (Backbone) {
-    Backbone.history.start();
+require(['$', '_', 'B', 'app-router'], function ($, _, B, AppRouter){
+    window.appRouter = new AppRouter();
+    B.history.start();
 });

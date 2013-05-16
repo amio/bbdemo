@@ -1,0 +1,11 @@
+html, body, #wrapper { width: 100%; height: 100%; margin: 0; padding: 0 }
+h1, h2, h3, h4, h5, h6 { margin: 0 }
+
+/* typography */
+body { font-family: 'Open Sans', 'Microsoft YaHei', sans-serif }
+
+/* For demo template */
+h1, p { padding: 0 10px }
+.goto { float: right }
+.back { float: left }
+.back a { display: block; margin-bottom: 10px }
