@@ -3,10 +3,12 @@
     "browser": true,
     "es5": true,
     "esnext": true,
+    "expr": true,
     "bitwise": true,
     "camelcase": true,
     "curly": true,
     "eqeqeq": true,
+    "predef": ["define","require"],
     "immed": true,
     "indent": 4,
     "latedef": true,
@@ -14,9 +16,10 @@
     "noarg": true,
     "quotmark": "single",
     "regexp": true,
+    "strict": false,
+    "globalstrict": false,
     "undef": true,
-    "unused": true,
-    "strict": true,
     "trailing": true,
-    "smarttabs": true
+    "smarttabs": true,
+    "white": false
 }
