@@ -49,7 +49,4 @@ EditorConfig 可以在项目中指定共通的代码规范，支持此功能的 
 ## 我只想做个WebApp而已干嘛搞这么复杂
 
 Paul Irish ([Web Application Development Workflow #51](https://dl.dropboxusercontent.com/u/39519/talks/html5dc-workflow/index.html#51)):  
-
-> If you're repeating yourself  
-> chances are someone's written software to automate it  
-> and if they haven't, you're about to.
+![If you're repeating yourself](https://f.cloud.github.com/assets/215282/567659/17cd9816-c6bc-11e2-998b-f4336db8a8b1.png)
