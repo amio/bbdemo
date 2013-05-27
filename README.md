@@ -5,7 +5,7 @@ Backbone Demo
 
 * Backbone - MVC库
 * RequireJS - JS加载管理
-* Grunt - JS任务执行
+* Grunt - 自动化任务执行
 * Bower - 依赖管理
 
 需要环境：
@@ -26,10 +26,13 @@ Backbone Demo
 
 内置的 Grunt 任务如下（配置文件为 Gruntfile.js）：
 
-1. `grunt server` - 在 localhost 启动一个 www 服务，查看 debug 下的开发页面
+1. `grunt server` - 在 localhost 启动一个 www 服务，查看 debug 下的开发页面 <sup>注释1</sup>
 2. `grunt build` - 执行 CoffeeScript 和 SASS 编译，JS压缩，CSS压缩，在 release 目录创建发布版本
 3. `grunt test` - 执行测试任务
 4. `grunt` - 执行 JSHint 检查，然后 grunt test，然后 grunt build 创建发布文件。
+
+<sup>注释1</sup> `grunt server` 运行期间，会通过 livereload 监控目录下的文件修改，在任意IDE中保存文件之后都能自动刷新页面 —— 好用的调试工具。
+
 
 ### JSHint
 
@@ -38,3 +41,11 @@ JSHint 用来强制约束代码规范，规则在 .jshintrc 中定义。
 ### EditorConfig
 
 EditorConfig 可以在项目中指定共通的代码规范，支持此功能的 IDE 可以识别 .editorconfig 文件并应用在项目中。
+
+## 我只想做个WebApp而已干嘛要搞这么复杂
+
+Paul Irish ([Web Application Development Workflow #51](https://dl.dropboxusercontent.com/u/39519/talks/html5dc-workflow/index.html#51)):  
+
+> If you're repeating yourself  
+> chances are someone's written software to automate it  
+> and if they haven't, you're about to.
