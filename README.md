@@ -38,7 +38,7 @@ Backbone Demo
 
 JSHint 用来强制约束代码规范，规则在 .jshintrc 中定义。  
 
-> 警告：***JSHint will hurt your feelings***  
+> 警告：**JSHint will hurt your feelings**
 
 所有人初次使用都会很难过的，别紧张……慢慢改，挺过去就好了（而且我已经把一些太变态的配置关掉了 XD）
 
