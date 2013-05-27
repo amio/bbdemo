@@ -33,6 +33,30 @@ Backbone Demo
 
 <sup>注释1</sup> `grunt server` 运行期间，会通过 livereload 监控目录下的文件修改，在任意IDE中保存文件之后都能自动刷新页面 —— 方便的测试工具 :D
 
+### Bower
+
+Bower 用于管理前端JS库的依赖。
+
+`bower list` 命令可以查看当前已安装的库：
+```shell
+$ bower list
+bower discover Please wait while newer package versions are being discovered
+usebb
+├── backbone-amd#1.0.0
+├── jquery#2.0.0 (2.0.1 now available)
+├── modernizr#2.6.2
+├── requirejs#2.1.6
+├── requirejs-text#2.0.6
+└── underscore-amd#1.4.4
+```
+如上所示列出了安装的库，咦，jQuery 有了 2.0.1 版本可以更新：
+```shell
+bower install jquery
+```
+更新库之后的好习惯是去冲杯咖啡，同时跑下自动测试：
+```shell
+grunt test
+```
 
 ### JSHint
 
