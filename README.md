@@ -20,7 +20,7 @@ Backbone Demo
 2. 执行 `bower install` 和 `npm install` 来安装依赖
 3. 执行 `grunt server` 即可启动服务器本地查看 Demo
 
-## 开发工具
+## 配套工具
 
 ### Grunt
 
