@@ -2,7 +2,7 @@
  * Main Router
  * Date: 4/17/13
  */
-define(['$', '_', 'B'], function ($, _, B){
+define(['jquery', 'underscore', 'backbone'], function ($, _, B){
     'use strict';
 
     var AppRouter = B.Router.extend({
