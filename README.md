@@ -10,8 +10,8 @@ Backbone Demo
 
 需要环境：
 
-* Node.js 和 npm（http://nodejs.org/）
-* Yeoman（http://yeoman.io/）
+* Node.js 和 npm（ http://nodejs.org/ ）
+* Yeoman（ http://yeoman.io/ ）
 
 
 ## 初始化
@@ -24,7 +24,7 @@ Backbone Demo
 
 ### Grunt
 
-内置的 Grunt 任务如下（配置文件 Gruntfile.js）：
+内置的 Grunt 任务如下（配置文件为 Gruntfile.js）：
 
 1. `grunt server` - 在 localhost 启动一个 www 服务，查看 debug 下的开发页面
 2. `grunt build` - 执行 CoffeeScript 和 SASS 编译，JS压缩，CSS压缩，在 release 目录创建发布版本
@@ -34,3 +34,7 @@ Backbone Demo
 ### JSHint
 
 JSHint 用来强制约束代码规范，规则在 .jshintrc 中定义。
+
+### EditorConfig
+
+EditorConfig 可以在项目中指定共通的代码规范，支持此功能的 IDE 可以识别 .editorconfig 文件并应用在项目中。
