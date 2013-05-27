@@ -1,8 +1,8 @@
 {
-  "name": "usebb",
-  "version": "0.0.0",
+  "name": "bbdemo",
+  "version": "0.1.0",
   "dependencies": {
-    "jquery": "~1.9.0",
+    "jquery": "~2.0.0",
     "requirejs": "~2.1.5",
     "requirejs-text": "~2.0.5",
     "backbone-amd": "~1.0.0",
