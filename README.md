@@ -31,21 +31,22 @@ Backbone Demo
 3. `grunt test` - 执行测试任务
 4. `grunt` - 执行 JSHint 检查，然后 grunt test，然后 grunt build 创建发布文件。
 
-<sup>注释1</sup> `grunt server` 运行期间，会通过 livereload 监控目录下的文件修改，在任意IDE中保存文件之后都能自动刷新页面 —— 好用的调试工具。
+<sup>注释1</sup> `grunt server` 运行期间，会通过 livereload 监控目录下的文件修改，在任意IDE中保存文件之后都能自动刷新页面 —— 方便的测试工具 :D
 
 
 ### JSHint
 
 JSHint 用来强制约束代码规范，规则在 .jshintrc 中定义。  
 
-需要提醒的是：JSHint will hurt your feelings  
+> 警告：***JSHint will hurt your feelings***  
+
 所有人初次使用都会很难过的，别紧张……慢慢改，挺过去就好了（而且我已经把一些太变态的配置关掉了 XD）
 
 ### EditorConfig
 
 EditorConfig 可以在项目中指定共通的代码规范，支持此功能的 IDE 可以识别 .editorconfig 文件并应用在项目中。
 
-## 我只想做个WebApp而已干嘛要搞这么复杂
+## 我只想做个WebApp而已干嘛搞这么复杂
 
 Paul Irish ([Web Application Development Workflow #51](https://dl.dropboxusercontent.com/u/39519/talks/html5dc-workflow/index.html#51)):  
 
