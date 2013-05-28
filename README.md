@@ -1,14 +1,14 @@
 Backbone Demo
 ======
 
-用 Yeoman 创建的 Backbone 移动 WebApp 项目示例，使用下列工具：
+用 Yeoman 创建的 Backbone 移动 WebApp 项目示例，包含以下内容：
 
 * Backbone - MVC库
 * RequireJS - JS加载管理
 * Grunt - 自动化任务执行
 * Bower - 依赖管理
 
-需要环境：
+辅助工具所需环境：
 
 * Node.js 和 npm（ http://nodejs.org/ ）
 * Yeoman（ http://yeoman.io/ ）
