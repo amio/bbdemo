@@ -47,7 +47,7 @@ define(['jquery', 'underscore', 'backbone'], function ($, _, B){
             var fromEl = fromPageView.$el,
                 toEl = toPageView.$el;
 
-            fromEl.one('webkitAnimationEnd', function (){
+            fromEl.one('webkitAnimationEnd animationend', function () {
                 fromEl.removeClass(animationName + ' out');
                 toEl.removeClass(animationName + ' in');
                 callback(fromPageView, toPageView);
