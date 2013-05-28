@@ -135,6 +135,16 @@ module.exports = function (grunt) {
                     // `name` and `out` is set by grunt-usemin
                     baseUrl: '<%= yeoman.app %>/scripts',
                     optimize: 'none',
+                    // *insert almond in all your modules
+                    almond: true,
+                    // *replace require script calls, with the almond modules
+                    // in the following files
+                    replaceRequireScript: [
+                        {
+                            files: ['<%= yeoman.dist %>/index.html'],
+                            module: 'main'
+                        }
+                    ],
                     // TODO: Figure out how to make sourcemaps work with grunt-usemin
                     // https://github.com/yeoman/grunt-usemin/issues/30
                     //generateSourceMaps: true,
@@ -251,13 +261,13 @@ module.exports = function (grunt) {
         'clean:dist',
         'coffee',
         'useminPrepare',
-        'requirejs',
         'imagemin',
         'htmlmin',
         'concat',
         'cssmin',
-        'uglify',
         'copy',
+        'requirejs',
+        'uglify',
         'usemin'
     ]);
 
