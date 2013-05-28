@@ -2,17 +2,20 @@
  * Main Router
  * Date: 4/17/13
  */
-define(['jquery', 'underscore', 'backbone'], function ($, _, B){
+define(['jquery', 'underscore', 'backbone'], function ($, _, B) {
     'use strict';
 
     var AppRouter = B.Router.extend({
+
         routes: {
             '': 'index',
             'hotels/:city/:date': 'hotel-list',
             'hotel/:id': 'hotel'
         },
-        initialize: function (){
+
+        initialize: function () {
             this.bindRoutes();
+
             // expose AppRouter
             return this;
         },
@@ -21,9 +24,9 @@ define(['jquery', 'underscore', 'backbone'], function ($, _, B){
          * ROUTES
          */
 
-        bindRoutes: function (){
-            _.each(this.routes, function (name, path){
-                this.route(path, name, function (){
+        bindRoutes: function () {
+            _.each(this.routes, function (name, path) {
+                this.route(path, name, function () {
                     var args = this.parseRouteArgs(path, arguments);
 
                     if (this.isBack()) {
@@ -32,7 +35,7 @@ define(['jquery', 'underscore', 'backbone'], function ($, _, B){
                     }
 
                     // make page views for path
-                    require(['views/' + name], function (View){
+                    require(['views/' + name], function (View) {
                         var newPageView = new View(args);
                         window.appRouter.historyPages.push({
                             hash: B.history.fragment,
@@ -42,11 +45,11 @@ define(['jquery', 'underscore', 'backbone'], function ($, _, B){
                 });
             }, this);
         },
-        parseRouteArgs: function (path, segments){
+        parseRouteArgs: function (path, segments) {
             var keys = path.match(/:\w+/g),
                 args = {};
 
-            _.each(keys, function (key, index){
+            _.each(keys, function (key, index) {
                 args[key.substring(1)] = segments[index];
             });
 
@@ -58,10 +61,10 @@ define(['jquery', 'underscore', 'backbone'], function ($, _, B){
          */
 
         historyPages: [],
-        getCurrentPageView: function (){
+        getCurrentPageView: function () {
             return this.historyPages.length ? _.last(this.historyPages).view : undefined;
         },
-        isBack: function (){
+        isBack: function () {
             var history = this.historyPages;
 
             for (var i = history.length; i--;) {
@@ -71,7 +74,7 @@ define(['jquery', 'underscore', 'backbone'], function ($, _, B){
             }
             return false;
         },
-        doBack: function (args){
+        doBack: function (args) {
             var history = window.appRouter.historyPages,
                 fromPage = history.pop(),
                 toPage = _.last(history);

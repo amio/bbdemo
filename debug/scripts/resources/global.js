@@ -2,10 +2,10 @@
  * Global Config
  * Date: 4/27/13
  */
-define([], function (){
+define([], function () {
     'use strict';
 
-    function getBrowserPlatform(){
+    function getBrowserPlatform() {
         // TODO: getBrowserPlatform. (android/ios/else)
         return 'ios';
     }

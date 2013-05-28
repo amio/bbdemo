@@ -6,7 +6,7 @@ require.config({
         jquery: '../components/jquery/jquery',
         backbone: '../components/backbone-amd/backbone',
         underscore: '../components/underscore-amd/underscore',
-        'text': '../components/requirejs-text/text'
+        text: '../components/requirejs-text/text'
     }
 });
 

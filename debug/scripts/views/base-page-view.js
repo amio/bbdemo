@@ -1,10 +1,10 @@
-define(['jquery', 'underscore', 'backbone'], function ($, _, B){
+define(['jquery', 'underscore', 'backbone'], function ($, _, B) {
     'use strict';
 
     var BaseView = B.View.extend({
         tagName: 'div',
 
-        renderPage: function (opt){
+        renderPage: function (opt) {
             // todo: render page frame first, then load page content.
 
             var router = window.appRouter,
@@ -22,7 +22,7 @@ define(['jquery', 'underscore', 'backbone'], function ($, _, B){
 
             if (this.supportAnimation() && fromView) {
                 var animName = isBack ? 'slideright' : 'slideleft';
-                toView.doSlide(fromView, toView, animName, function (fromView, toView){
+                toView.doSlide(fromView, toView, animName, function (fromView, toView) {
                     fromView.remove();
                 });
             } else {
@@ -31,7 +31,7 @@ define(['jquery', 'underscore', 'backbone'], function ($, _, B){
 
         },
 
-        supportAnimation: function (){
+        supportAnimation: function () {
             // TODO: check if allow animation
             return true;
         },
@@ -43,7 +43,7 @@ define(['jquery', 'underscore', 'backbone'], function ($, _, B){
          * @param animationName {String}
          * @param callback {Function}
          */
-        doSlide: function (fromPageView, toPageView, animationName, callback){
+        doSlide: function (fromPageView, toPageView, animationName, callback) {
             var fromEl = fromPageView.$el,
                 toEl = toPageView.$el;
 
