@@ -2,12 +2,22 @@
 
 require.config({
     baseUrl: 'scripts',
+    shim: {
+        zepto: {
+            exports: 'Zepto'
+        }
+    },
     paths: {
-        jquery: '../components/jquery/jquery',
+        zepto: '../components/zepto/zepto',
         backbone: '../components/backbone-amd/backbone',
         underscore: '../components/underscore-amd/underscore',
         text: '../components/requirejs-text/text'
     },
+    map: {
+        // Ensure Zepto is used instead of jQuery.
+        "*": { "jquery": "zepto" }
+    },
+
     // For r.js build
     deps: [
         'views/base-page-view',

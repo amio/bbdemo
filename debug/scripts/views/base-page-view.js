@@ -1,4 +1,4 @@
-define(['jquery', 'underscore', 'backbone'], function ($, _, B) {
+define(['underscore', 'backbone'], function (_, B) {
     'use strict';
 
     var BaseView = B.View.extend({
