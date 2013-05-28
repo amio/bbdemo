@@ -7,7 +7,14 @@ require.config({
         backbone: '../components/backbone-amd/backbone',
         underscore: '../components/underscore-amd/underscore',
         text: '../components/requirejs-text/text'
-    }
+    },
+    // For r.js build
+    deps: [
+        'views/base-page-view',
+        'views/index',
+        'views/hotel',
+        'views/hotel-list'
+    ]
 });
 
 require(['backbone', 'app-router'], function (B, AppRouter){
