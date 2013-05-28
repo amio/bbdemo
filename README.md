@@ -24,7 +24,7 @@ Backbone Demo
 
 ### Grunt
 
-内置的 Grunt 任务如下（配置文件为 Gruntfile.js）：
+[Grunt](http://gruntjs.com/) 是一个基于Node环境的自动化任务执行工具。此项目中已经配置好的 Grunt 任务如下（配置文件为 Gruntfile.js）：
 
 1. `grunt server` - 在 localhost 启动一个 www 服务，查看 debug 下的开发页面 <sup>注释1</sup>
 2. `grunt build` - 执行 CoffeeScript 和 SASS 编译，JS压缩，CSS压缩，在 release 目录创建发布版本
@@ -35,7 +35,7 @@ Backbone Demo
 
 ### Bower
 
-Bower 用于管理前端JS库的依赖。
+[Bower](http://bower.io/) 用于管理前端JS库的依赖。
 
 `bower list` 命令可以查看当前已安装的库：
 ```shell
@@ -60,7 +60,7 @@ grunt test
 
 ### JSHint
 
-JSHint 用来强制约束代码规范，规则在 .jshintrc 中定义。  
+[JSHint](http://www.jshint.com/) 用来强制约束代码规范，规则在 .jshintrc 中定义。  
 
 > 警告：**JSHint will hurt your feelings**
 
@@ -68,7 +68,7 @@ JSHint 用来强制约束代码规范，规则在 .jshintrc 中定义。
 
 ### EditorConfig
 
-EditorConfig 可以在项目中指定共通的代码规范，支持此功能的 IDE 可以识别 .editorconfig 文件并应用在项目中。
+[EditorConfig](http://editorconfig.org/) 可以在项目中指定共通的代码规范，支持此功能的 IDE 可以识别 .editorconfig 文件并应用在项目中。
 
 ## 我只想做个WebApp而已干嘛搞这么复杂
 
