@@ -15,7 +15,7 @@ require.config({
     },
     map: {
         // Ensure Zepto is used instead of jQuery.
-        "*": { "jquery": "zepto" }
+        '*': { 'jquery': 'zepto' }
     },
 
     // For r.js build
