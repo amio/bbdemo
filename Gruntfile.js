@@ -134,7 +134,6 @@ module.exports = function (grunt) {
                 options: {
                     // `name` and `out` is set by grunt-usemin
                     baseUrl: '<%= yeoman.app %>/scripts',
-                    optimize: 'none',
                     // *insert almond in all your modules
                     almond: true,
                     // *replace require script calls, with the almond modules
@@ -150,7 +149,7 @@ module.exports = function (grunt) {
                     //generateSourceMaps: true,
                     // required to support SourceMaps
                     // http://requirejs.org/docs/errors.html#sourcemapcomments
-                    preserveLicenseComments: true,
+                    preserveLicenseComments: false,
                     useStrict: true,
                     wrap: true
                     //uglify2: {} // https://github.com/mishoo/UglifyJS2
@@ -267,7 +266,6 @@ module.exports = function (grunt) {
         'cssmin',
         'copy',
         'requirejs',
-        'uglify',
         'usemin'
     ]);
 
